@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
-function App() {
-  const [name, setName] = useState("Yousuf")
 
+function App() {
+
+  const [tabs, setTabs] = useState(1);
+
+  const handleTabs = (index) => {
+    console.log('Hello world');
+  }
   return (
     <div>
-      <h1>My name is: {name}</h1>
-
+      <h2>This is a tab</h2>
+      <button onClick={() => handleTabs(1)}>Click</button>
 
     </div>
   );
